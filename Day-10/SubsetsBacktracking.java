@@ -1,0 +1,23 @@
+import java.util.*;
+
+public class SubsetsBacktracking {
+    public static List<List<Integer>> subsets(int[] nums) {
+        List<List<Integer>> result = new ArrayList<>();
+        backtrack(0, nums, new ArrayList<>(), result);
+        return result;
+    }
+
+    private static void backtrack(int index, int[] nums, List<Integer> curr, List<List<Integer>> result) {
+        result.add(new ArrayList<>(curr));
+        for (int i = index; i < nums.length; i++) {
+            curr.add(nums[i]);
+            backtrack(i + 1, nums, curr, result);
+            curr.remove(curr.size() - 1);
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] arr = { 1, 2, 3 };
+        System.out.println(subsets(arr));
+    }
+}
