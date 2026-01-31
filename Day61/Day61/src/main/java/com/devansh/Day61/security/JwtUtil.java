@@ -1,4 +1,4 @@
-package com.devansh.Day60.security;
+package com.devansh.Day61.security;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;

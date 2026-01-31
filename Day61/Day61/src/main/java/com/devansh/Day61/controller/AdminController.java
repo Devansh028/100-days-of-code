@@ -1,4 +1,4 @@
-package com.devansh.Day60.controller;
+package com.devansh.Day61.controller;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;

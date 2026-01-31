@@ -1,4 +1,4 @@
-package com.devansh.Day60.security;
+package com.devansh.Day61.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
